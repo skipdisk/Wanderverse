@@ -1,11 +1,15 @@
 @import @/styles/helpers
 
 .card
+    margin: rem(24) 0
+    border-radius: rem(20)
+    padding: rem(24)
     display: block
-    color: $n1
+    color: $n5
     transition: color .2s
     &:hover
-        color: $s2
+        background: $a4
+        color: $n7
 
 .preview
     position: relative
@@ -44,11 +48,17 @@
 
 .price
     +base
-    color: $n1
+    color: $n6
     +m
         +baseS
     span
-        color: $n5
+        color: $n4
+    
+    &:hover
+        color: $a4
+  
+
+  
 
 .users
     flex-shrink: 0

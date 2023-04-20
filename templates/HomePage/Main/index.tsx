@@ -34,6 +34,7 @@ const list = [
 import { Navigation, Scrollbar } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
+import Image from "@/components/Image";
 
 type MainProps = {};
 
@@ -41,18 +42,31 @@ const Main = ({}: MainProps) => (
   <>
     <div className={styles.row}>
       <div className={styles.col}>
-        <h1 className={cn("hero", styles.title)}>
-          Where Imagination Meets Reality
-        </h1>
+        <div className={styles.content}>
+          <h1 className={cn("hero", styles.title)}>
+            Where Imagination Meets Reality
+          </h1>
+          <h4 className={styles.subtitle}>
+            In today's fast-paced digital age, independent artists struggle to
+            gain visibility, find meaningful connections, and monetize their
+            work effectively. The traditional channels for promoting art often
+            lack inclusivity and fail to provide the flexibility and resources
+            needed to thrive in the ever-evolving landscape of art and
+            technology.
+          </h4>
+        </div>
       </div>
       <div className={styles.col}>
         <div className={styles.content}>
-          We are laying the groundwork for web3 — the next generation of the
-          internet full of limitless possibilities.
+          <Image
+            src={"/images/art/Subject-3.png"}
+            width={1000}
+            height={1000}
+            layout="intrinsic"
+            objectFit="scale-down"
+            alt="Background"
+          />
         </div>
-        <Link href="/discover">
-          <a className={cn("button-empty", styles.search)}>start your search</a>
-        </Link>
       </div>
     </div>
     <div className={styles.wrapper}>

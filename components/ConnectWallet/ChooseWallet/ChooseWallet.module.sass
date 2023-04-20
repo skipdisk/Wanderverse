@@ -5,7 +5,7 @@
 
 .title
     margin-bottom: rem(48)
-    color: $n1
+    color: $n7
 
 .head
     position: relative
@@ -21,7 +21,7 @@
         right: 0
         bottom: 0
         height: rem(1)
-        background: $n7
+        background: 'red'
 
 .tabs
     display: flex
@@ -57,9 +57,9 @@
         margin-bottom: rem(0)
     &:hover,
     &.active
-        color: $n1
+        color: $a3
     &.active
-        border-color: $n1
+        border-color: $a3
 
 .wallet
     position: relative
@@ -69,7 +69,7 @@
         top: 50%
         right: rem(32)
         transform: translateY(-50%)
-        fill: $n1
+        fill: $a3
         opacity: 0
         transition: opacity .2s
     &:before,
@@ -114,7 +114,7 @@
     border-radius: rem(12)
     border: rem(2) solid $n7
     +body1
-    color: $n3
+    color: $n2
     transition: background .2s, color .2s
     +m
         +body1M
@@ -136,7 +136,7 @@
     position: relative
     padding-left: rem(40)
     +base
-    color: $n1
+    color: $n7
     &:before,
     &:after
         content: ""
@@ -155,9 +155,11 @@
         width: rem(4)
         height: rem(4)
         background: $n4
+
         transition: background .2s
     &:hover
+        color: $a3
         &:before
-            border-color: $n1
+            border-color: $n7
         &::after
-            background: $n1
+            background: $a3

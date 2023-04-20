@@ -7,6 +7,7 @@ import Auctions from "@/components/Auctions";
 import Spotlight from "./Spotlight";
 import Creativity from "./Creativity";
 import Newsletter from "@/components/Newsletter";
+import Background from "@/components/Background";
 
 import { auctions } from "@/mocks/auctions";
 
@@ -17,7 +18,7 @@ const HomePage = () => {
       <Hot />
       <Dream />
       <Collections />
-      <Auctions items={auctions} />
+      {/* <Auctions items={auctions} /> */}
       <Spotlight />
       <Creativity />
       <Newsletter />

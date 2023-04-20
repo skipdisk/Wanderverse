@@ -1,9 +1,12 @@
 @import @/styles/helpers
 
 .item
+    background: $n7
+    border-radius: rem(20)
     position: relative
-    flex: 0 0 50%
-    width: 50%
+    flex: 0 1 45%
+    margin: 0 rem(24) rem(24) 0
+    // width: 50%
     padding: rem(94) rem(32)
     border-width: rem(1) rem(1) 0 0
     border-style: solid
@@ -16,7 +19,7 @@
         padding: rem(44) rem(12)
     &:hover
         box-shadow: 0 rem(62) rem(48) rem(-16) rgba(0, 0, 0, 0.1)
-        background: $n1
+        background: $a4
         .avatar
             &:before
                 transform: scale(1)
@@ -27,6 +30,15 @@
         .inner
             background: $n7
             color: $n1
+        
+        .total
+            color: $n5
+
+        .currency
+                color: $a5
+
+        .login
+            color: $n8
 
 .number
     position: absolute
@@ -45,9 +57,9 @@
     width: rem(40)
     height: rem(40)
     clip-path: url(#polygonNumber)
-    background: $n1
+    background: $n8
     +base
-    color: $n7
+    color: $n2
     transition: all .2s
     
 .avatar
@@ -69,7 +81,7 @@
         left: rem(-20)
         right: rem(-20)
         bottom: rem(-20)
-        border: rem(1) solid $n3
+        border: rem(1) solid $n6
         border-radius: 50%
         pointer-events: none
         transform: scale(.7)
@@ -80,7 +92,7 @@
 .login
     margin-bottom: rem(4)
     +body1
-    color: $n7
+    color: $n2
     +d
         +body1M
     +m
@@ -88,10 +100,10 @@
 
 .total
     +base
-    color: $n5
+    color: $n4
     +m
         +baseS
     span
-        color: $n7
+        color: $n2
 
         

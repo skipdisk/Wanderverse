@@ -1,17 +1,19 @@
 @import @/styles/helpers
 
 .row
+    margin-top: rem(20)
     display: flex
     +t
         display: block
 
 .col
+    border-radius: rem(20)
     flex: 0 0 50%
     width: 50%
     +t
         width: 100%
-    &:nth-child(2)
-        background: $n2
+    // &:nth-child(2)
+    //     background: $n2
 
 .details
     position: sticky
@@ -92,4 +94,7 @@
     .button
         +m
             width: auto
+        &:hover
+            color: $n7
+            background: $a4
 

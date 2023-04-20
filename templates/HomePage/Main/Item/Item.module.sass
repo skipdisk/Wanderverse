@@ -5,9 +5,11 @@
     box-sizing: border-box
     +t
         display: block
+    border-radius: rem(20)
 
 .preview,
 .wrap
+    border-radius: 0 0 rem(20) 0
     flex: 0 0 50%
     width: 50%
     +t
@@ -20,12 +22,15 @@
         content: ""
         display: block
         padding-bottom: 100%
+    
+    span
+        border-radius: 0 0 0 rem(20)
 
 .wrap
     display: flex
     flex-direction: column
     padding: rem(80)
-    background: $a4
+    background: $b1
     +xl
         padding: rem(80) rem(64)
     +w

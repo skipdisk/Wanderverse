@@ -2,35 +2,34 @@
 
 .row
     display: flex
+    background: $b1
+    border-radius: rem(20)
     +t
         display: block
+
+
+
 
 .col
     display: flex
     flex-direction: column
     flex: 0 0 50%
     width: 50%
-    min-height: rem(800)
-    padding: rem(80)
-    +xl
-        padding: rem(64)
-    +w
-        min-height: rem(768)
-        padding: rem(64) rem(40)
-    +d
-        padding: rem(40)
-    +t
-        width: 100%
-        min-height: rem(400)
-        padding: rem(40) rem(24)
-    +m
-        min-height: rem(508)
-    &:nth-child(1)
-        background: $a4
-    &:nth-child(2)
-        background: $n7
-        .title
-            color: $n1
+    padding: rem(64)
+    // +xl
+    //     padding: rem(64)
+    // +w
+    //     min-height: rem(768)
+    //     padding: rem(64) rem(40)
+    // +d
+    //     padding: rem(40)
+    // +t
+    //     width: 100%
+    //     min-height: rem(400)
+    //     padding: rem(40) rem(24)
+    // +m
+    //     min-height: rem(508)
+
 
 .title
     margin-bottom: auto

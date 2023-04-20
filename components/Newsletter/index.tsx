@@ -22,7 +22,7 @@ const Newsletter = ({}: NewsletterProps) => {
         <div className={styles.btns}>
           <a
             className={cn("button-large", styles.button)}
-            href="https://ui8.net/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -31,7 +31,7 @@ const Newsletter = ({}: NewsletterProps) => {
           </a>
           <a
             className={cn("button-white button-large", styles.button)}
-            href="https://ui8.net/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >

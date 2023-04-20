@@ -1,8 +1,9 @@
 @import @/styles/helpers
 
 .spotlight
+    border-radius: rem(20)
     padding: rem(80)
-    background: $n8
+    background: 'transparent'
     +xl
         padding: rem(64)
     +w
@@ -29,16 +30,17 @@
 
 .title
     margin-bottom: rem(20)
-    color: $n1
+    color: $n7
 
 .info
     +body1
-    color: $n5
+    color: $n6
     +w
         +body1M
 
 .list
     display: flex
+    justify-content: center
     flex-wrap: wrap
     margin: rem(-64) rem(-20) 0
     +w
